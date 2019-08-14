@@ -7,7 +7,7 @@ def get_video_data():
      each item in the list is a dictionary of a specific videos and their attributes."""
 
     vid_data = []
-    with open('USvideos.csv', newline='', encoding="utf-8") as csvfile:
+    with open('USvideos.csv', newline='', encoding='utf-8') as csvfile:
         spamreader = csv.reader(csvfile, delimiter=',', quotechar='"')
         for row in spamreader:
             if len(row) == 16:
